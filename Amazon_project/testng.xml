@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="2">
+	<listeners>
+		<listener
+			class-name="extentReport.ExtentTestNGIReporterListener" />
+	</listeners>
+
+	<test name="Amazon_Test_Chrome">
+		<parameter name="browser" value="Chrome" />
+		<classes>
+			<class name="amazon.Test_Execution_1" />
+			<class name="amazon.Test_Execution_2" />
+		</classes>
+	</test> <!-- Amazon_Test -->
+
+	<test name="Amazon_Test_Opera">
+		<parameter name="browser" value="Opera" />
+		<classes>
+			<class name="amazon.Test_Execution_1" />
+			<class name="amazon.Test_Execution_2" />
+		</classes>
+	</test> <!-- Amazon_Test -->
+
+	<test name="Amazon_Test_Edge">
+		<parameter name="browser" value="Edge" />
+		<classes>
+			<class name="amazon.Test_Execution_1" />
+			<class name="amazon.Test_Execution_2" />
+		</classes>
+	</test> <!-- Amazon_Test -->
+
+
+</suite> <!-- Suite -->
